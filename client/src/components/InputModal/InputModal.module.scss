@@ -1,0 +1,87 @@
+.Overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 9999; /* Ensure the overlay appears above other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .Modal{
+        height: 250px;
+        width: 500px;
+        background-color: #fefefe;
+        border-radius: 12px;
+        height: 250px;
+        width: 300px;
+        position: relative;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #383836;
+
+        .X{
+            position: absolute;
+            padding: 10px;
+            top: 0;
+            right: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .X:hover{
+            cursor: pointer;
+        }
+
+        .UserIcon{
+            width: 50px;
+            margin-top: 50px;
+        }
+
+        .Form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+
+            .Input{
+                width: 180px;
+                border: none;
+                border-bottom: 1px solid #000;
+                font-size: 18px;
+            }
+
+            .Warning{
+                width: 200px;
+                font-size: 10px;
+                text-align: center;
+                color: red;
+            }
+
+            .Input:focus{
+                outline: none;
+            }
+
+            .Button{
+                width: 100px;
+                border: none;
+                background-color: #383836;
+                color: white;
+                border-radius: 8px;
+                font-size: 18px;
+                height: 35px;
+                margin-top: 10px;
+            }
+
+            .Button:hover{
+                cursor: pointer;
+                background-color: #474745;
+            }
+        }
+    }
+}

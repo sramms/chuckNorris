@@ -1,0 +1,44 @@
+.Overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 9999; /* Ensure the overlay appears above other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .Modal{
+        height: 250px;
+        width: 300px;
+        background-color: #fefefe;
+        border-radius: 12px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #383836;
+
+        .MailIcon{
+            width: 100px;
+            margin-top: 50px;
+        }
+
+        .NotificationText{
+            font-size: 25px;
+        }
+
+        .X{
+            position: absolute; top: 0; right: 0;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .X:hover{
+            cursor: pointer;
+        }
+    }
+}

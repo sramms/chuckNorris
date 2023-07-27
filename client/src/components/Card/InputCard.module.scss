@@ -1,0 +1,26 @@
+.CardWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+
+    .Card{
+        max-width: 90vw;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+        border-radius: 12px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(to bottom right, #FFA500, #FF4500);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .Card:hover{
+        width: 110%;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,21 @@
+.InputButton{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+    width: 60px;
+    height: 60px;
+    //Flex is needed for hover change to work from the center outwards
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .PlusSign{
+        width: 50px;
+    }
+
+    .PlusSign:hover{
+        width:55px;
+        cursor: pointer;
+    }
+}
